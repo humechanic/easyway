@@ -1,0 +1,23 @@
+.MainPageTitle {
+  color: #FFFFFF;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.MainPageTitle p {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.MainPageTitle h5 {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+}

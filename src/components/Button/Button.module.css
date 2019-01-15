@@ -1,0 +1,20 @@
+
+.Button {
+  color: #FFFFFF;
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 1px;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  width: 180px;
+}
+
+
+.catalog {
+  border: 2px solid #FFBF00;
+}
+
+.service {
+  border: 2px solid #007FFF;
+}

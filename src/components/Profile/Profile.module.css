@@ -1,0 +1,12 @@
+.Profile {
+justify-content: right;
+
+}
+.Profile a {
+  border-bottom: 1px solid white;
+  margin-left: 5px;
+}
+
+.Profile i {
+  color: #FFFFFF;
+}

@@ -1,0 +1,12 @@
+.Menu ul li {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.Menu li {
+  border-bottom: #FFFFFF 1px solid;
+}
+
