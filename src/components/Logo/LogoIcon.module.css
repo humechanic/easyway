@@ -1,0 +1,17 @@
+.LogoIcon {
+  margin: 2% 2%;
+  flex-basis: 20%;
+}
+
+
+.LogoIcon p{
+  color: #FFFFFF;
+  margin: 1% 25%;
+  width: 100px;
+}
+
+.LogoIcon .Footer p {
+  color: #000000;
+  margin: 1% 25%;
+  width: 100px;
+}

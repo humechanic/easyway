@@ -1,0 +1,22 @@
+.Header {
+  width: 100%;
+  background: url(../../img/HeaderBG.png) rgba(0, 0, 0, 0.4) no-repeat bottom;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+.Buttons{
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.title {
+  flex-basis: 100%;
+  position: relative;
+  top: -50px;
+  overflow: hidden;
+}

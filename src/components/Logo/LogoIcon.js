@@ -1,29 +1,13 @@
-import React, {Component} from 'react';
-import Logo, from '../../img/Logo.png'
+import React from 'react';
+import Logo from '../../img/Logo.png';
+import classes from './LogoIcon.module.css'
 
-class LogoIcon extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            TextColor: [
-                {
-                    Header: '#ffffff;',
-                },
-                {
-                    Footer: '#000000;',
-                }
-            ]
-        }
-    }
-
-
-render () {
-    return (
-        <div>
-            <img src={Logo} alt={Easyway}>Easy Way</br>Благотворительный каталог<img/>
-        </div>
-    )
-  }
+const LogoIcon = (props) => {
+        return(
+            <div className={classes.LogoIcon}>
+            <img src={Logo} alt={Logo}/>
+                <p>Благотворительный каталог</p>
+            </div>
+        )
 };
-
 export default LogoIcon;
