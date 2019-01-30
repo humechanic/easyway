@@ -1,0 +1,40 @@
+.CharityItem {
+  display: flex;
+  flex-basis: 40%;
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.blue {
+  color: #2cbae7;
+}
+
+.red {
+  color: #ec6026;
+}
+
+.yellow {
+  color: #fbad22;
+}
+
+
+.CharityItem h3 {
+  font-weight: normal;
+  font-size: 40px;
+  display: flex;
+  margin: 15px;
+}
+
+.CharityItem h3 p {
+  margin-top: 13%;
+  font-size: 20px;
+}
+
+.CharityItem img {
+  height: fit-content;
+  width: fit-content;
+  align-self: center;
+  padding-left: 25px;
+}

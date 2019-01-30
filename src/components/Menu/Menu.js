@@ -29,7 +29,9 @@ class Menu extends Component {
             <ul className={classes.Menu}>
                 {
                     this.state.MenuList.map((MenuList, index) => {
-                        return <MenuItem key={index} title={MenuList.title} />
+                        return <MenuItem key={index}
+                                         title={MenuList.title}
+                        />
                     })
                 }
             </ul>

@@ -46,7 +46,7 @@ class Carousel extends Component {
             ),
         };
         return (
-<div className={"sliderWrap"}>
+
                 <Slider {...settings}>
                     <div className={"slideContent firstSlide"}>
                         <div className={"slideContentWrap"}>
@@ -73,7 +73,7 @@ class Carousel extends Component {
                         </div>
                     </div>
                 </Slider>
-</div>
+
         );
     }
 }
