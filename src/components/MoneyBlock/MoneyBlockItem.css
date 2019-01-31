@@ -1,0 +1,43 @@
+.blueBox, .yellowBox, .redBox {
+  color: white;
+  width: 33%;
+  height: 150px;
+  margin-bottom: 2%;
+}
+
+.blueBox {
+  background-color: #2cbae7;
+}
+
+.redBox {
+  background-color: #ec6026;
+}
+
+.yellowBox {
+  background-color: #fbad22;
+}
+
+.moneyBlockItem p, h2, span{
+  display: flex;
+ justify-content: center;
+}
+
+.moneyBlockItem p {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.moneyBlockItem h2{
+
+  font-weight: bold;
+  font-size: 60px;
+  margin: 0;
+}
+
+.moneyBlockItem span{
+  font-family: "Roboto Thin", sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  margin-top: 5%;
+  padding: 2%;
+}

@@ -1,5 +1,7 @@
 
 .Button {
+  cursor: pointer;
+  outline: none;
   color: #FFFFFF;
   background: transparent;
   padding: 10px 20px;

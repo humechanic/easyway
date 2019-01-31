@@ -1,0 +1,6 @@
+.Stock {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  flex-basis: 100%;
+}
