@@ -1,0 +1,40 @@
+.NewsBlockItem {
+  width: 33%;
+  height: 200px;
+  overflow: hidden;
+}
+.NewsBlockItem a {
+  text-decoration: none;
+}
+.NewsBlockItem p {
+  background-color: rgba(0, 33, 44, 0.9);
+  height: 200px;
+  position: relative;
+  top: 120px;
+  color: whitesmoke;
+  font-family: "Roboto Thin", sans-serif;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: all 0.6s;
+  line-height: 25px;
+}
+
+
+.NewsBlockItem p:hover {
+  top: -15px;
+}
+
+.Block {
+  background: url("./../../img/News.png") center no-repeat;
+  background-size: cover;
+}
+
+.Block1 {
+  background: url("./../../img/News1.png") center no-repeat;
+  background-size: cover;
+}
+
+.Block2 {
+  background: url("./../../img/News2.png") center no-repeat;
+  background-size: cover;
+}

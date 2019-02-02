@@ -1,0 +1,12 @@
+.BlockTitle {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  font-family: "Roboto Thin", sans-serif;
+}
+
+.BlockTitle a {
+  color: #ec6026;
+  font-size: 15px;
+  margin-left: 6px;
+}

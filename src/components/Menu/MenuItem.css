@@ -1,0 +1,30 @@
+.MenuItem {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+  top: 0;
+}
+
+.Header a{
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: #FFFFFF 1px solid;
+  transition: all 0.3s;
+}
+
+.Footer .MenuItem a{
+  color: #0e2734;
+  text-decoration: none;
+  border-bottom: #0e2734 1px solid;
+  transition: all 0.3s;
+}
+.Header a:active,
+.Header a:hover{
+  color: #d3d3d3;
+}
+
+.Footer a:active,
+.Footer a:hover {
+  color: #216283;
+}

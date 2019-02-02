@@ -1,0 +1,8 @@
+.CurvyTitle {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+}
+.CurvyTitle button {
+  margin: 0;
+}

@@ -13,10 +13,18 @@
 }
 
 
-.catalog {
+.yellow {
   border: 2px solid #FFBF00;
 }
 
-.service {
+.blue {
   border: 2px solid #2cbae7;
+}
+
+.textBlack {
+  color: black;
+}
+
+.noBorder {
+  border: none;
 }

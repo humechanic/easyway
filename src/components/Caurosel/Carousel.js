@@ -51,25 +51,25 @@ class Carousel extends Component {
                     <div className={"slideContent firstSlide"}>
                         <div className={"slideContentWrap"}>
                             <h2>Благотворительные пожертвования для детского дома №12</h2>
-                        <Button type="catalog">Подробнее</Button>
+                        <Button buttonType="yellow">Подробнее</Button>
                         </div>
                     </div>
                     <div className={"slideContent secondSlide"}>
                         <div className={"slideContentWrap"}>
                             <h2>Благотворительные пожертвования в фонд Хосписа</h2>
-                            <Button type="catalog">Подробнее</Button>
+                            <Button buttonType="yellow">Подробнее</Button>
                         </div>
                     </div>
                     <div className={"slideContent thirdSlide"}>
                         <div className={"slideContentWrap"}>
                             <h2>Благотворительные пожертвования куда-нибудь ещё</h2>
-                            <Button type="catalog">Подробнее</Button>
+                            <Button buttonType="yellow">Подробнее</Button>
                         </div>
                     </div>
                     <div className={"slideContent forthSlide"}>
                         <div className={"slideContentWrap"}>
                             <h2>Благотворительные пожертвования и ещё туда куда-нибудь</h2>
-                            <Button type="catalog">Подробнее</Button>
+                            <Button buttonType="yellow">Подробнее</Button>
                         </div>
                     </div>
                 </Slider>

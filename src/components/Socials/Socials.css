@@ -1,0 +1,11 @@
+.Socials {
+  display: flex;
+  flex-basis: 23%;
+  justify-content: center;
+  align-self: center;
+}
+
+.Socials a{
+  border-bottom: none;
+  margin: 3px;
+}

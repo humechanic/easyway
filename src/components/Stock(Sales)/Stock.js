@@ -14,7 +14,7 @@ class Stock extends Component {
                     info:'Скидка на размещение в каталоге',
                     type:'blue',
                     background:'Cart',
-                    waveLength: 'aaaa',
+                    waveLength: '..........',
 
                 },
                 {
@@ -22,7 +22,7 @@ class Stock extends Component {
                     info: 'Регистрируйся и участвуй в розыгрыше призов',
                     type: 'red',
                     background: 'Price',
-                    waveLength: 'aaaaaaa',
+                    waveLength: '..................',
 
                 },
                 {
@@ -30,7 +30,7 @@ class Stock extends Component {
                     info: 'Бесплатная неделя размещения в каталоге',
                     type: 'yellow',
                     background: 'Sale',
-                    waveLength: 'aaaaaaa',
+                    waveLength: '..................',
 
                 },
 

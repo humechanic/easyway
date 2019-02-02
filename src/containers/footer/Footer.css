@@ -1,0 +1,17 @@
+.Footer {
+  background-color: #e3e3e3;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.Footer ul {
+  margin-top: 57px;
+  white-space: nowrap;
+  flex-basis: 20%;
+}
+
+.Footer ul li{
+  justify-content: center;
+}

@@ -21,14 +21,16 @@ class Header extends Component {
             <>
             <div className={classes.Header}>
                     <LogoIcon />
-                    <Menu />
+                    <Menu
+                        type={'Header'}
+                    />
                     <Profile />
                 <div className={classes.title}>
 
                     <MainPageTitle />
                         <div className={classes.Buttons}>
-                            <Button type="catalog">Каталог товаров</Button>
-                            <Button type="service">Услуги</Button>
+                            <Button buttonType="yellow">Каталог товаров</Button>
+                            <Button buttonType="blue">Услуги</Button>
                         </div>
 
                 </div>

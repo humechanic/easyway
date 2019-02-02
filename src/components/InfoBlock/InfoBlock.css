@@ -1,0 +1,14 @@
+.InfoBlock {
+  display: flex;
+  justify-content: center;
+  margin-right: 15%;
+  margin-left: 15%;
+  flex-basis: 100%;
+}
+
+.InfoBlock p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}

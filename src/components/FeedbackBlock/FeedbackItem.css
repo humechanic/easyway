@@ -1,0 +1,30 @@
+.FeedbackItem {
+  display: flex;
+  border: 1px solid #c2c2c2;
+  width: 49.5%;
+  font-family: Roboto, sans-serif;
+}
+.User {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.FeedbackItem .User{
+  margin: 30px 0 30px 40px;
+}
+
+.UserFeedback p {
+  margin: 8% 20px 30px 30px;
+  font-size: 14px;
+}
+
+.FeedbackItem img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.User span {
+  font-weight: bold;
+}

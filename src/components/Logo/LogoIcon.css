@@ -4,14 +4,14 @@
 }
 
 
-.LogoIcon p{
+.LogoIcon p.white{
   color: #FFFFFF;
-  margin: 1% 25%;
+  margin: 0 19%;
   width: 100px;
 }
 
-.LogoIcon .Footer p {
-  color: #000000;
-  margin: 1% 25%;
+.LogoIcon p.black {
+  color: #0e2734;
+  margin: 0 15%;
   width: 100px;
 }

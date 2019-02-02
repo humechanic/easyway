@@ -1,10 +1,14 @@
 import React, {Component} from 'react'
-import MenuItem from './MenuItem/MenuItem'
+import MenuItem from './MenuItem'
 import classes from './Menu.module.css'
 
 class Menu extends Component {
     constructor(props) {
         super(props);
+
+        this.type = {
+                type: [props.type]
+                    };
 
         this.state = {
             MenuList: [
@@ -31,6 +35,7 @@ class Menu extends Component {
                     this.state.MenuList.map((MenuList, index) => {
                         return <MenuItem key={index}
                                          title={MenuList.title}
+                                         type={this.props.type}
                         />
                     })
                 }
@@ -38,5 +43,5 @@ class Menu extends Component {
 
         );
     }
-};
+}
 export default Menu;

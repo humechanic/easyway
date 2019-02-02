@@ -1,0 +1,10 @@
+.CurvyWaveItem {
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  margin: 0 2%;
+  font-size: 40px;
+  line-height: 0;
+}
+.CurvyWaveItem span {
+  color: transparent;
+}
