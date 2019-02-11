@@ -7,16 +7,3 @@
   flex-flow: wrap row;
   justify-content: space-between;
 }
-.Buttons{
-  flex-basis: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-
-.title {
-  flex-basis: 100%;
-  position: relative;
-  top: -50px;
-  overflow: hidden;
-}

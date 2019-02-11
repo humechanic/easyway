@@ -5,7 +5,7 @@ const Button = (props) => {
     const cls = [
         classes.Button,
         classes[props.buttonType],
-        classes[props.buttonStyle]
+        classes[props.titleStyle]
     ];
     return (
         <button

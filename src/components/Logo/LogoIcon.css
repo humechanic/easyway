@@ -3,6 +3,9 @@
   flex-basis: 20%;
 }
 
+.LogoIcon a{
+  text-decoration: none;
+}
 
 .LogoIcon p.white{
   color: #FFFFFF;

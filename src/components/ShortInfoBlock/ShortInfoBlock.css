@@ -1,4 +1,4 @@
-.InfoBlock {
+.ShortInfoBlock {
   display: flex;
   justify-content: center;
   margin-right: 15%;
@@ -6,7 +6,7 @@
   flex-basis: 100%;
 }
 
-.InfoBlock p {
+.ShortInfoBlock>p {
   font-family: "Roboto", sans-serif;
   text-align: center;
   margin-top: 0;

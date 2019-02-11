@@ -1,0 +1,28 @@
+.Menu {
+  margin-top: 1%;
+  padding: 0;
+  flex-basis: 50%;
+  display: flex;
+  justify-items: center;
+  flex-flow: column;
+}
+
+.Links {
+  margin: 1%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.Buttons {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.MainPageTitle {
+  margin-bottom: 10%;
+  white-space: nowrap;
+}

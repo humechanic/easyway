@@ -10,10 +10,10 @@ const CurvyTitle = (props) => {
                             type={props.type}
                             waveLength={props.waveLength}
                         />
-                        <Button
-                            buttonType={[props.buttonType]}
-                            buttonStyle={[props.buttonStyle]}
-                        >{props.title}</Button>
+                            <Button
+                                buttonType={[props.buttonType]}
+                                titleStyle={[props.titleStyle]}
+                            >{props.title}</Button>
                         <CurvyWaveItem
                             type={props.type}
                             waveLength={props.waveLength}

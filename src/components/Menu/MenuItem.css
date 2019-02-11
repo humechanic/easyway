@@ -1,8 +1,9 @@
 .MenuItem {
-  display: inline-block;
+  display: flex;
   margin: 0 15px;
   padding: 0;
   top: 0;
+  justify-content: center;
 }
 
 .Header a{

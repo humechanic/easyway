@@ -1,18 +1,17 @@
 import React from 'react';
-import './InfoBlock.css';
+import './ShortInfoBlock.css';
 
-const InfoBlock = (props) => {
+const ShorInfoBlock = (props) => {
         return (
-            <div className={"InfoBlock"}>
+            <div className={"ShortInfoBlock"}>
                 <p>
-                    <b>{props.firstWord}</b>
-                    {props.infoText}
+                    <b>{props.firstWord}</b>{props.infoText}
                 </p>
             </div>
         )
 };
 
-InfoBlock.defaultProps = {
+ShorInfoBlock.defaultProps = {
     firstWord: 'EASY WAY', //bold
     infoText: ' – это центр поддержки общественно полезных проектов, в фундаменте которого лежит уникальный\n' +
     '                    механизм – аукцион встреч. EASY WAY – это место, где Вы можете выставить встречу с собой на аукцион\n' +
@@ -21,4 +20,4 @@ InfoBlock.defaultProps = {
     '                    получить новый незабываемый опыт и установить полезные контакты.',
 };
 
-export default InfoBlock;
+export default ShorInfoBlock;

@@ -1,6 +1,10 @@
 import React, {Component} from 'react'
 import MenuItem from './MenuItem'
-import classes from './Menu.module.css'
+import './Menu.css'
+import MainPageTitle from "../MainPageTitle/MainPageTitle";
+import Button from "../Button/Button";
+import { Route } from 'react-router-dom';
+
 
 class Menu extends Component {
     constructor(props) {
@@ -14,15 +18,16 @@ class Menu extends Component {
             MenuList: [
                 {
                     title: 'О нас',
-                    path: 'router',
+                    path: '/about',
+
                 },
                 {
                     title: 'Стать партнером',
-                    path: 'router',
+                    path: '/join',
                 },
                 {
                     title: 'Контакты',
-                    path: 'router',
+                    path: '/contacts',
                 }
             ]
         }
@@ -30,17 +35,31 @@ class Menu extends Component {
     }
     render () {
         return (
-            <ul className={classes.Menu}>
-                {
-                    this.state.MenuList.map((MenuList, index) => {
-                        return <MenuItem key={index}
-                                         title={MenuList.title}
-                                         type={this.props.type}
-                        />
-                    })
-                }
-            </ul>
+                <nav className={"Menu"}>
 
+                    <ul className={"Links"}>
+                        {
+                            this.state.MenuList.map((MenuList, index) => {
+                                return <MenuItem key={index}
+                                                 title={MenuList.title}
+                                                 type={this.props.type}
+                                                 path={MenuList.path}/>
+                            })
+                        }
+                    </ul>
+
+                    <div className={"MainPageTitle"}>
+
+                        <Route exact path="/" component={MainPageTitle}
+                        />
+
+                        <div className={"Buttons"}>
+                                <Button buttonType="yellow">Каталог товаров</Button>
+                                <Button buttonType="blue">Услуги</Button>
+                        </div>
+
+                    </div>
+                </nav>
         );
     }
 }

@@ -54,7 +54,7 @@ this.CharityList.sort(compareNumeric);
         return (
             <div className={"CharityList"}>
             {
-                <p className={"title"}>{this.Title.title}</p>
+                <p className={"CharityTitle"}>{this.Title.title}</p>
             }
             {
                     this.CharityList.map((CharityList, index) => {

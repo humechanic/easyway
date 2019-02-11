@@ -4,14 +4,18 @@
   flex-basis: 100%;
   justify-content: space-between;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.Footer ul {
-  margin-top: 57px;
-  white-space: nowrap;
+.Footer>.Menu {
   flex-basis: 20%;
 }
 
-.Footer ul li{
-  justify-content: center;
+.Footer>.Menu>.Links {
+  margin-top: 50px;
+}
+
+
+.Footer>.Menu>.MainPageTitle {
+  display: none;
 }
