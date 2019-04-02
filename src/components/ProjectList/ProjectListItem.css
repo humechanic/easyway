@@ -1,0 +1,34 @@
+.ProjectListItem {
+  width: 30%;
+  background-color: #dcf6fe;
+  display: flex;
+  flex-flow: wrap column;
+  margin: 0 15px 0 15px;
+}
+
+.ProjectListItem>img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+}
+
+
+.ProjectListItem > a{
+  margin: 30px auto 30px auto;
+}
+
+.ProjectName {
+  color: black;
+  font-family: "Roboto Thin", sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.ProjectInfo {
+  margin: 10px 0;
+  padding: 0 20px;
+  font-weight: bold;
+}

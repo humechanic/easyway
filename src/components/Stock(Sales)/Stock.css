@@ -4,3 +4,114 @@
   justify-content: space-between;
   flex-basis: 100%;
 }
+
+.Stock a {
+  text-decoration: none;
+}
+
+.StockItem {
+  width: 33%;
+  height: 350px;
+  margin-bottom: 2%;
+}
+
+.SingleStockItem {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 2%;
+}
+
+.StockItem p {
+  font-family: "Roboto Thin", sans-serif;
+  width: 60%;
+  color: whitesmoke;
+  font-size: 25px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.SingleStockItem p {
+  font-family: "Roboto Thin", sans-serif;
+  color: whitesmoke;
+  font-size: 25px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.StockItem h2 {
+  font-size: 50px;
+  margin-top: 1.3em;
+  margin-bottom: 0;
+}
+
+.SingleStockItem h2 {
+  font-size: 50px;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+/*-------------waves--------------*/
+.StockItem span {
+  position: relative;
+  left: 9px; /*exact wave center*/
+  top: -20px; /*as margin-top*/
+  margin-bottom: 30px;
+  line-height: 0;
+  font-size: 50px; /*wave size*/
+  display: flex;
+  justify-content: center;
+  text-decoration: underline wavy;
+  color: transparent;
+}
+
+.SingleStockItem span {
+  position: relative;
+  left: 9px; /*exact wave center*/
+  top: -20px; /*as margin-top*/
+  margin-bottom: 30px;
+  line-height: 0;
+  font-size: 50px; /*wave size*/
+  display: flex;
+  justify-content: center;
+  text-decoration: underline wavy;
+  color: transparent;
+}
+
+.Cart span {
+  text-decoration: underline wavy #2cbae7;
+}
+
+.Sale span {
+  text-decoration: underline wavy #fbad22;
+}
+
+.Price span {
+  text-decoration: underline wavy #ec6026;
+}
+
+/*-----------------------*/
+.Cart {
+  background: center url("../../img/MainPage/cart.png") rgba(0, 33, 44, 0.9) no-repeat;
+  opacity: .85;
+  background-size: cover;
+  background-blend-mode: multiply;
+  
+}
+
+.Sale {
+  background: center url("../../img/MainPage/sale.png") rgba(0, 33, 44, 0.9) no-repeat;
+  opacity: .85;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.Price {
+  background: center url("../../img/MainPage/price.png") rgba(0, 33, 44, 0.9) no-repeat;
+  opacity: .85;
+  background-size: cover;
+  background-blend-mode: multiply;
+  
+}

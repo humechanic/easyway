@@ -1,0 +1,33 @@
+.breadcrumbs {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.breadcrumbItem > li > a {
+  color: lightgrey;
+}
+
+.breadcrumbItem > li:first-child > a > span:before {
+  content: none;
+}
+
+.breadcrumbItem > li:last-child > a {
+  text-decoration: none;
+}
+
+
+.breadcrumbItem > li > a > span:before {
+  text-decoration: none;
+  content: "|";
+  padding-left: 4px;
+  padding-right: 4px;
+}

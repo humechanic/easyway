@@ -1,0 +1,50 @@
+.CatalogueProductItem {
+  display: flex;
+  flex-basis: 75%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.itemImage {
+  width: 115px;
+  height: 220px;
+  margin: 20px;
+}
+
+.ProductDescriPosition {
+  flex-flow: wrap column;
+  margin-top: 3%;
+  flex-basis: 80%;
+}
+
+.ProductName, .ProductDesc {
+  justify-content: flex-start;
+  margin-top: 3%;
+
+}
+
+.ProductName {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.ProductPrice, .Offers {
+  color: #ec6026;
+}
+
+.Offers {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+.ProductPrice {
+  font-weight: bold;
+}
+
+.OffersAndBuy {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap column;
+  margin-left: 10%;
+}

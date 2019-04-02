@@ -1,0 +1,19 @@
+.AutoCharity {
+  margin: 30px 0 30px 0;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.AutoCharity label {
+  display: flex;
+}
+
+.checkbox {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  color: #ffffff;
+  border-radius: 2px;
+}

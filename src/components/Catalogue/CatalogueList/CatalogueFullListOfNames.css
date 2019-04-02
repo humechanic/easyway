@@ -1,0 +1,64 @@
+
+.CatalogueFull {
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: wrap row;
+}
+.CatalogueItem {
+  width: 33%;
+}
+
+.CatalogueItem ul {
+  list-style: none;
+  font-family: "FiraSans", sans-serif;
+  margin: 8% 0 0 5%;
+  padding: 0;
+}
+
+.CatalogueItem ul li {
+  padding: 10px 0 10px 10px;
+  transition: ease-in-out 0.2s;
+  display: flex;
+  flex-basis: 100%;
+}
+
+.CatalogueItem ul a {
+ text-decoration: none;
+  color: #0e2734;
+  width: 100%;
+}
+
+.CatalogueItem li:hover {
+  background-color: #ffe7bb;
+}
+
+.PopupCatalogueItem {
+  display: none;
+  margin-top: -25px;
+  background-color: #ffe7bb;
+}
+
+.CatalogueItem li:hover .PopupCatalogueItem {
+  display: block;
+  float: right;
+}
+
+.PopupCatalogueItem ul a:hover li {
+  background-color: #fff2d9;
+}
+
+.PopupCatalogueItem ul {
+  width: 25%;
+  margin: 0;
+  padding: 10px 15px;
+  background-color: #ffe7bb;
+  position: absolute;
+}
+
+.PopupCatalogueItem ul li {
+  padding: 10px;
+}
+
+.right .PopupCatalogueItem ul {
+  right: 33.3%;
+}

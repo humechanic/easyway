@@ -1,0 +1,19 @@
+.ColorBlock {
+  width: 250px;
+  margin: 7% 0 3% 3.5%;
+  display: flex;
+  flex-flow: wrap column;
+}
+
+.ColorBlock>p, .ColorBlock>h2 {
+  text-align: center;
+  justify-content: center;
+}
+
+.ColorBlock>p {
+  margin: 50px auto 0 auto;
+}
+
+.ColorBlock > h2 {
+  margin: 0 auto auto auto;
+}

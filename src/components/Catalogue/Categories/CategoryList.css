@@ -1,0 +1,15 @@
+.Categories {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 18%;
+  margin-left: 2%;
+}
+
+.CategoryName {
+  margin-bottom: 1em;
+}
+.selects {
+  width: 80%;
+  height: 30px;
+  color: lightgrey;
+}

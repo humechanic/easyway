@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import "./Charity.css";
 import CharityItem from './CharityItem';
-import logoBlrKCompany from '../../img/logoBlrKCompany.png';
-import logoGasProm from '../../img/logoGasProm.png';
-import logoBlrBank from '../../img/logoBlrBank.png'
+import logoBlrKCompany from '../../img/MainPage/logoBlrKCompany.png';
+import logoGasProm from '../../img/MainPage/logoGasProm.png';
+import logoBlrBank from '../../img/MainPage/logoBlrBank.png'
 
 function compareNumeric(a, b) {
     if (a.moneyAmount < b.moneyAmount) return 1;

@@ -8,6 +8,46 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'Roboto Regular';
+  src: local('Roboto'), url(./Fonts/Roboto-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: local('Roboto Bold'), url(./Fonts/Roboto-Bold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Thin';
+  src: local('Roboto Thin'), url(./Fonts/Roboto-Thin.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'FiraSans Bold';
+  src: local('FiraSans Bold'), url(./Fonts/FiraSans-Bold.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'FiraSans Light';
+  src: local('FiraSans Light'), url(./Fonts/FiraSans-Light.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'FiraSans Regular';
+  src: local('FiraSans'), url(./Fonts/FiraSans-Regular.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'FiraSans ExtraLight';
+  src: local('FiraSans'), url(./Fonts/FiraSans-ExtraLight.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'FiraSans Thin';
+  src: local('FiraSans'), url(./Fonts/FiraSans-Thin.otf) format('otf');
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

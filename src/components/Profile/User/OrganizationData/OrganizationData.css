@@ -1,0 +1,42 @@
+.UserBlock {
+  display: flex;
+  flex-flow: wrap row;
+  flex-basis: 50%;
+}
+
+.Avatar {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 7%;
+  text-align: center;
+}
+
+.UserInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.UserBlock p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.Avatar>img {
+ margin: -20px -250px 0 0;
+}
+
+.Edit {
+  margin-top: 15px;
+ color: #2cbae7;
+}
+
+.Weak {
+  color: lightgrey;
+}
+
+.UserInfoText {
+  width: 150px;
+  color: black;
+  justify-content: flex-start;
+}

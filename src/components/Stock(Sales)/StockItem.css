@@ -1,7 +1,3 @@
-.Stock a {
-  text-decoration: none;
-}
-
 .StockItem {
   width: 33%;
   height: 350px;
@@ -51,7 +47,7 @@
 }
 /*-----------------------*/
 .Cart {
-  background: center url("../../img/cart.png") rgba(0, 33, 44, 0.9) no-repeat;
+  background: center url("../../img/MainPage/cart.png") rgba(0, 33, 44, 0.9) no-repeat;
   opacity: .85;
   background-size: cover;
   background-blend-mode: multiply;
@@ -59,14 +55,14 @@
 }
 
 .Sale {
-  background: center url("../../img/sale.png") rgba(0, 33, 44, 0.9) no-repeat;
+  background: center url("../../img/MainPage/sale.png") rgba(0, 33, 44, 0.9) no-repeat;
   opacity: .85;
   background-size: cover;
   background-blend-mode: multiply;
 }
 
 .Price {
-  background: center url("../../img/price.png") rgba(0, 33, 44, 0.9) no-repeat;
+  background: center url("../../img/MainPage/price.png") rgba(0, 33, 44, 0.9) no-repeat;
   opacity: .85;
   background-size: cover;
   background-blend-mode: multiply;

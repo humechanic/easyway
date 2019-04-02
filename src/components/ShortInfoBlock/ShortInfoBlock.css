@@ -9,6 +9,5 @@
 .ShortInfoBlock>p {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 }

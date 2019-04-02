@@ -1,4 +1,3 @@
-
 .Button {
   cursor: pointer;
   outline: none;
@@ -11,7 +10,6 @@
   font-size: 14px;
   width: 180px;
 }
-
 
 .yellow {
   border: 2px solid #FFBF00;
@@ -26,11 +24,33 @@
 }
 
 .noBorder {
+  line-height: 25px;
   border: none;
+  font-family: "Fira Sans Light", sans-serif;
 }
 
 .fontSize {
   font-size: 25px;
   color: black;
+}
+
+.catalogue {
+  font-size: 23px;
+  color: black;
+  white-space: nowrap;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chooseProject {
   
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  width: 440px;
 }

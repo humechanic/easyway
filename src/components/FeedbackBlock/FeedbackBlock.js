@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './FeedbackBlock.css';
 import FeedbackItem from './FeedbackItem';
-import Avatar from './../../img/Avatar.png';
-import Avatar1 from './../../img/Avatar1.png';
+import Avatar from './../../img/MainPage/Avatar.png';
+import Avatar1 from './../../img/MainPage/Avatar1.png';
 
 class FeedbackBlock extends Component{
     constructor(props) {

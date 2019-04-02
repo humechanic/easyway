@@ -50,12 +50,11 @@ class Menu extends Component {
 
                     <div className={"MainPageTitle"}>
 
-                        <Route exact path="/" component={MainPageTitle}
-                        />
+                        <Route exact path="/" component={MainPageTitle}/>
 
                         <div className={"Buttons"}>
-                                <Button buttonType="yellow">Каталог товаров</Button>
-                                <Button buttonType="blue">Услуги</Button>
+                                <Button to="/catalogue" buttonType="yellow">Каталог товаров</Button>
+                                <Button to="/service" buttonType="blue">Услуги</Button>
                         </div>
 
                     </div>

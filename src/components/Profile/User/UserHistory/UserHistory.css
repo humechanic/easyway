@@ -1,0 +1,37 @@
+.UserHistoryBox {
+  display: flex;
+  flex-basis: 47%;
+  flex-flow: column wrap;
+}
+
+.UserHistory {
+  background-color: #dcf6fe;
+}
+
+.wholeHistory {
+  margin: 30px auto 0 auto;
+  color: #2cbae7;
+  text-align: center;
+  background-color: white;
+}
+
+.UserHistoryTitle {
+  display: flex;
+  justify-content: center;
+}
+.UserHistoryItems {
+  color: #8b8b8b;
+}
+
+.UserHistoryItems, .Payments {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 8px;
+  margin: 8px 40px 0 40px;
+  border-bottom: 1px solid #2cbae7;
+}
+
+.Payments:last-child {
+  margin-bottom: 30px;
+}

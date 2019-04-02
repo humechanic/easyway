@@ -3,21 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Route } from 'react-router-dom'
-import HomePage from "./containers/Pages/Home";
-import Layout from "./containers/Layout/Layout";
-import AboutPage from "./containers/Pages/About";
+import { BrowserRouter } from 'react-router-dom';
+import ScrollToTop from './components/Utils/ScrollToTop/ScrollToTop'
+import SPAData from "./state";
 
 
 
 ReactDOM.render(
 
-
         <BrowserRouter>
-            <App/>
+            <ScrollToTop>
+                <App SPAdata={SPAData}
+
+                />
+            </ScrollToTop>
         </BrowserRouter>,
 
-    document.getElementById('root'));
+document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

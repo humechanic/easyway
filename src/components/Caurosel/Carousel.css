@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+.slideContentWrap a {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .Slider {
   width: 55%;
   margin: 30px 10px 30px 0;
@@ -95,25 +100,25 @@
 }
 
 .firstSlide {
-  background: center url("../../img/slider.png") rgba(0, 0, 0, 0.4) no-repeat;
+  background: center url("../../img/MainPage/slider.png") rgba(0, 0, 0, 0.4) no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 
 .secondSlide {
-  background: center url("../../img/slider1.png") rgba(0, 0, 0, 0.4) no-repeat;
+  background: center url("../../img/MainPage/slider1.png") rgba(0, 0, 0, 0.4) no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 
 .thirdSlide {
-  background: center url("../../img/slider.png") rgba(0, 0, 0, 0.4) no-repeat;
+  background: center url("../../img/MainPage/slider.png") rgba(0, 0, 0, 0.4) no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }
 
 .forthSlide {
-  background: center url("../../img/slider1.png") rgba(0, 0, 0, 0.4) no-repeat;
+  background: center url("../../img/MainPage/slider1.png") rgba(0, 0, 0, 0.4) no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
 }

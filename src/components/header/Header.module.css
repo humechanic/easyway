@@ -1,6 +1,6 @@
 .Header {
   width: 100%;
-  background: url(../../img/HeaderBG.png) rgba(0, 0, 0, 0.4) no-repeat bottom;
+  background: url(../../img/MainPage/HeaderBG.png) rgba(0, 0, 0, 0.4) no-repeat bottom;
   background-size: cover;
   background-blend-mode: multiply;
   display: flex;

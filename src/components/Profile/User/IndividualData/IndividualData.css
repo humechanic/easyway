@@ -1,0 +1,18 @@
+.IndividualBlock {
+  display: flex;
+  flex-flow: wrap row;
+  flex-basis: 50%;
+}
+
+.IndividualUserAvatar {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 7%;
+  text-align: center;
+}
+
+.IndividualUserAvatar>img {
+  margin: 0 -10px 0 -10px;
+}
+

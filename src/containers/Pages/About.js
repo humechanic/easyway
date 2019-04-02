@@ -1,16 +1,17 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Content from "../content/Content";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import CurvyTitle from "../../components/CurvyWavePageDecor/CurvyTitle";
 import TextBlock from "../../components/TextBlock/TextBlock";
-import AboutPageImg from "../../img/AboutPage.png"
+import AboutPageImg from "../../img/AboutPage/AboutPage.png";
+import Breadcrumbs from './../../components/Breadcrumbs/Breadcrumb';
 
-class AboutPage extends Component {
-    render() {
+const AboutPage = ({match}) => {
         return (
             <Content>
                 <Header/>
+                <Breadcrumbs/>
                 <CurvyTitle
 
                     title={'О нас'}
@@ -44,7 +45,7 @@ class AboutPage extends Component {
                 <Footer/>
             </Content>
         )
-    }
-}
+
+};
 
 export default AboutPage;

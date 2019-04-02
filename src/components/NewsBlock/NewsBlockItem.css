@@ -25,16 +25,16 @@
 }
 
 .Block {
-  background: url("./../../img/News.png") center no-repeat;
+  background: url("./../../img/MainPage/News.png") center no-repeat;
   background-size: cover;
 }
 
 .Block1 {
-  background: url("./../../img/News1.png") center no-repeat;
+  background: url("./../../img/MainPage/News1.png") center no-repeat;
   background-size: cover;
 }
 
 .Block2 {
-  background: url("./../../img/News2.png") center no-repeat;
+  background: url("./../../img/MainPage/News2.png") center no-repeat;
   background-size: cover;
 }

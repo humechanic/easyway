@@ -3,8 +3,8 @@ import './Footer.css';
 import Menu from "../../components/Menu/Menu";
 import LogoIcon from "../../components/Logo/LogoIcon";
 import Socials from "../../components/Socials/Socials";
-import LogoFooter from '../../img/Logo1.png';
-import ShorInfoBlock from "../ShortInfoBlock/ShorInfoBlock";
+import LogoFooter from '../../img/MainPage/Logo1.png';
+import ShortInfoBlock from "../ShortInfoBlock/ShorInfoBlock";
 
 class Footer extends Component{
     render() {
@@ -24,7 +24,7 @@ class Footer extends Component{
 
                 </div>
 
-                <ShorInfoBlock
+                <ShortInfoBlock
                         firstWord = {''}
                         infoText = {'© 2017 ООО «Фонд благотворительной помощи» УНП 12345687'}/>
 

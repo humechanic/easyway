@@ -1,0 +1,24 @@
+.SearchBar {
+  display: flex;
+  flex-basis: 100%;
+  margin-bottom: 2%;
+  padding: 2% 0 2% 0;
+}
+
+.SearchBar input {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35px;
+  border: 1px solid lightgrey;
+  padding-left: 40px;
+  line-height: 15px;
+  font-family: "Fira Sans Light", sans-serif;
+  color: black;
+  font-size: 15px;
+  background: url("../../img/Catalogue/Lens.png") no-repeat 10px 6px #FFFFFF;
+}
+
+.otherPages {
+background-color: #ffe7bb;
+}
