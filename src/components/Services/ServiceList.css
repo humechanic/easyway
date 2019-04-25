@@ -1,0 +1,24 @@
+.Services {
+  display: flex;
+  list-style: none;
+  flex-basis: 90%;
+  justify-content: center;
+  padding-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid lightgrey;
+}
+
+.Services>li {
+  cursor: pointer;
+  margin: 10px 20px;
+  font-weight: bold;
+}
+
+.Services > li.active {
+  color: #ec6026;
+}
+
+.ServiceSubList {
+  flex-basis: 100%;
+}

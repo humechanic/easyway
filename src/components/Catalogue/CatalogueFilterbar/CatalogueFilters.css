@@ -1,0 +1,34 @@
+.filterBar {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  flex-basis: 75%;
+  height: 50px;
+}
+
+.filterBar ul {
+  display: flex;
+  flex-basis: 70%;
+}
+
+.filterBar ul>li {
+  list-style: none;
+  margin-right: 3%;
+}
+.filterButtons {
+  margin-top: 15px;
+  margin-bottom: auto;
+  height: 30px;
+}
+
+.filterButtons>button {
+  color: lightgrey;
+  font-size: 23px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filterButtons > button .active {
+  color: black;
+}

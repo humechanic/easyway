@@ -11,7 +11,6 @@ import Catalogue from './containers/Pages/Catalogue';
 import Service from './containers/Pages/Service';
 
 const App = (props) => {
-    debugger;
         return (
             <Layout>
                 <Switch>

@@ -5,10 +5,16 @@ import Footer from "../../components/footer/Footer";
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumb';
 import CurvyTitle from "../../components/CurvyWavePageDecor/CurvyTitle";
 import SearchBar from "../../components/search-bar/SearchBar";
+import ServiceList from "../../components/Services/ServiceList";
+import ServiceFilters from "../../components/Services/ServicesFilters/DayTimeFilter";
+import ServiceCompanies from "../../components/Services/ServicesColumn/ServiceCompanies";
+import BankMap from "../../components/Services/ServiceMaps/BankMap";
+import Content from "../content/Content";
 
 const Service = () => {
+
     return (
-        <Layout>
+        <Content>
             <Header/>
             <Breadcrumbs/>
             <CurvyTitle
@@ -17,8 +23,11 @@ const Service = () => {
                 titleStyle={"fontSize"} //textBlack (white = default), fontSize (font-size: 40px)
             />
             <SearchBar/>
+            <ServiceList/>
+            <ServiceCompanies/>
+            <BankMap/>
             <Footer/>
-        </Layout>
+        </Content>
     )
 
 };

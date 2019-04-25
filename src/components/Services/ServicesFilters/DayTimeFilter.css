@@ -1,0 +1,49 @@
+.Filters {
+  display: flex;
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid lightgrey;
+  margin: 2% 0 8% 0;
+  flex-basis: 40%;
+  height: 40px;
+}
+
+.ServiceFilter {
+  border: none !important;
+  outline: none;
+  text-decoration-color: #ec6026 ;
+}
+
+label.ServiceFilter {
+  position: relative;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.ServiceFilter select {
+  display: inline-block;
+  padding: 4px 3px 3px 5px;
+  margin: 0;
+  font: inherit;
+  outline: none; /* remove focus ring from Webkit */
+  line-height: 1.2;
+  color: black;
+  border: 0;
+}
+
+/* Select arrow styling */
+.ServiceFilter:after {
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 70%;
+  line-height: 30px;
+  padding: 1px 4px;
+  color: #ec6026;
+  pointer-events: none;
+}
+
+.no-pointer-events .ServiceFilter:after {
+  content: none;
+}

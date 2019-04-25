@@ -1,0 +1,13 @@
+.LocationFilter {
+  display: flex;
+  margin-left: 3%;
+}
+
+.LocationFilter > span {
+  font-size: 14px;
+}
+
+.LocationFilter > input {
+  height: 15px;
+  width: 15px;
+}

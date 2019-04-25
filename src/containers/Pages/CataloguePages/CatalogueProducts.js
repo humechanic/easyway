@@ -3,15 +3,16 @@ import CategoryList from "../../../components/Catalogue/Categories/CategoryList"
 import AllProducts from '../../../components/Catalogue/CatalogueProducts/AllProducts';
 import SearchBar from "../../../components/search-bar/SearchBar";
 import Breadcrumbs from './../../../components/Breadcrumbs/Breadcrumb';
-import { Route } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 
-const CatalogueProducts = () => {
-  return (
+
+const CatalogueProducts = (props) => {
+    return (
       <>
           <Breadcrumbs/>
           <SearchBar/>
-          <CategoryList/>
-          <Route path={'/catalogue/:catalogueItem'} component={AllProducts}/>
+          <CategoryList products={props.products}/>
+          <AllProducts  products={props.products}/>
       </>
   )
 };

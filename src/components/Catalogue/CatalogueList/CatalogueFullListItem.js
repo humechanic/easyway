@@ -6,7 +6,6 @@ const Item = ({item}) => (
         <Link to={`/catalogue${item.itemPath}`}>
             {item.itemName}
             {item.ListItem && item.ListItem.length ? (
-
                 <div className={"PopupCatalogueItem"}>
                     <ul>
                         {item.ListItem.map((child, index) => (

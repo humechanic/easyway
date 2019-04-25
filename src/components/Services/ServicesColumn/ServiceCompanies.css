@@ -1,0 +1,69 @@
+.ServiceCompanies {
+  margin-left: 3.7%;
+}
+
+.ServiceItem {
+  width: 97%;
+  margin-top: 1%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.ServiceItem > p {
+  display: inherit;
+  font-weight: bold;
+  margin: -15px 0 5px 0;
+}
+
+.ServiceLocationAndWorktime {
+  display: inherit;
+  margin-bottom: 1%;
+  flex-basis: 50%;
+}
+
+.ServiceLocationAndWorktime > a {
+  text-decoration: none;
+  margin-right: 16%;
+}
+
+.ServiceLocationAndWorktime > span {
+  margin-right: 16%;
+}
+
+.ServiceLocationAndWorktime > img {
+  position: relative;
+  top: -5px;
+}
+
+.ServiceLocationAndWorktime > a, .ServiceLocationAndWorktime > span {
+  color: #2cbae7;
+  border-bottom: 1px solid #2cbae7;
+  height: 20px;
+}
+
+.CompanyLogo {
+  height: 200px;
+  width: 450px;
+  overflow: hidden;
+}
+
+.CompanyLogo>img {
+  height: 100%;
+  width: 98%;
+  margin-top: -30px;
+  margin-left: 0;
+}
+
+.LogoLess {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 5%;
+}
+
+
+.LogoLess > .ServiceLocationAndWorktime > a {
+  margin-right: 16%;
+}
+
+.LogoLess > .ServiceLocationAndWorktime > span {
+  margin-right: 16%;
+}

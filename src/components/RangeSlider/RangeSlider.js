@@ -2,22 +2,23 @@ import React, { Component } from 'react';
 import { Slider, Rail, Handles, Tracks } from 'react-compound-slider';
 import { SliderRail, Handle, Track } from './SliderRail';
 import PriceFilter from './../Catalogue/PriceFilter';
+import Products from "../../containers/Pages/Products";
 
 const sliderStyle = {
     position: 'relative',
     width: '100%',
 };
+const defaultValues = [0, 3000];
 
-const defaultValues = [0, 1000];
 
 class RangeSlider extends Component {
+
     state = {
-        domain: [0, 1000],
+        domain: [0, 3000],
         values: defaultValues.slice(),
         update: defaultValues.slice(),
         reversed: false,
     };
-
     onUpdate = update => {
         this.setState({update})
     };
@@ -26,11 +27,11 @@ class RangeSlider extends Component {
         this.setState({values})
     };
 
-
     render() {
         const {
-            state: {domain, values, update, reversed},
+            state: {domain, values, update, reversed,},
         } = this;
+
 
         return (
             <div style={{height: 50, width: '85%',}}>
@@ -77,7 +78,8 @@ class RangeSlider extends Component {
                     </Tracks>
 
                 </Slider>
-                <PriceFilter values={values} update={update}/>
+
+                <PriceFilter prices={this.props.products} values={values}/>
             </div>
         )
     }

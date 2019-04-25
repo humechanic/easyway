@@ -1,11 +1,30 @@
 import React from 'react';
 import CategoryName from "./CategoryName";
-import PriceFilter from './../PriceFilter';
 import './CategoryList.css';
 import RangeSlider from "./../../RangeSlider/RangeSlider";
+import LocationFilter from "../LocationFilter";
 
-const ListNames = [
-    {
+const BrandName = {
+    categoryName: 'Производитель',
+    List: [
+        {
+            name: 'Все',
+        },
+        {
+            name: 'Атлант',
+        },
+        {
+            name: 'Витязь',
+        },
+        {
+            name: 'Валькирия',
+        },
+        {
+            name: 'Вафелька',
+        },
+    ],
+};
+const Design = {
         categoryName: 'Исполнение',
         List: [
             {
@@ -24,28 +43,8 @@ const ListNames = [
                 name: 'Есть',
             },
         ],
-    },
-    {
-        categoryName: 'Производитель',
-        List: [
-            {
-                name: 'Все',
-            },
-            {
-                name: 'Атлант',
-            },
-            {
-                name: 'Витязь',
-            },
-            {
-                name: 'Валькирия',
-            },
-            {
-                name: 'Вафелька',
-            },
-        ],
-    },
-    {
+    };
+const Construction = {
         categoryName: 'Конструкция',
         List: [
             {
@@ -64,68 +63,87 @@ const ListNames = [
                 name: 'Вафелька',
             },
         ],
-    },
-];
+    };
+const FreezingSystem = {
+    categoryName: 'Система охлаждения',
+    List:
+        [
+            {
+                name: 'Все',
+            },
+            {
+                name: 'Атлант',
+            },
+            {
+                name: 'Витязь',
+            },
+            {
+                name: 'Гефест',
+            },
+            {
+                name: 'Горизонт',
+            },
+        ],
+};
+
+const BrandNameOptions = BrandName.List.map((BrandName, index) => {
+    return (
+        <option key={index}>{BrandName.name}</option>
+    )
+});
+const DesignOptions = Design.List.map((Design, index) => {
+    return (
+        <option key={index}>{Design.name}</option>
+    )
+});
+const ConstructionOptions = Construction.List.map((Construction, index) => {
+    return (
+        <option key={index}>{Construction.name}</option>
+    )
+});
+const FreezingSystemOptions = FreezingSystem.List.map((FreezingSystem, index) => {
+    return (
+        <option key={index}>{FreezingSystem.name}</option>
+    )
+});
+
 
 const CategoryList = (props) => {
   return (
           <div className={'Categories'}>
-              <CategoryName>Исполнение</CategoryName>
+              <h3>Холодильники</h3>
+              <CategoryName>{Design.categoryName}</CategoryName>
               <select className={'selects'}>
-                  <option>Все</option>
-                  <option>Горизонт</option>
-                  <option>Витязь</option>
-                  <option>Атлант</option>
-                  <option>Гефест</option>
+                  {DesignOptions}
               </select>
-              <CategoryName>Производитель</CategoryName>
+              <CategoryName>{BrandName.categoryName}</CategoryName>
               <select className={'selects'}>
-                  <option>Все</option>
-                  <option>Горизонт</option>
-                  <option>Витязь</option>
-                  <option>Атлант</option>
-                  <option>Гефест</option>
+                  {BrandNameOptions}
               </select>
-              <CategoryName>Конструкция</CategoryName>
+              <CategoryName>{Construction.categoryName}</CategoryName>
               <select className={'selects'}>
-                  <option>Все</option>
-                  <option>Горизонт</option>
-                  <option>Витязь</option>
-                  <option>Атлант</option>
-                  <option>Гефест</option>
+                  {ConstructionOptions}
               </select>
               <CategoryName>Цена</CategoryName>
-              <RangeSlider/>
-              <CategoryName>Система охлаждения</CategoryName>
+
+              <RangeSlider products={props.products}/>
+
+              <CategoryName>{FreezingSystem.categoryName}</CategoryName>
               <select className={'selects'}>
-                  <option>Все</option>
-                  <option>Горизонт</option>
-                  <option>Витязь</option>
-                  <option>Атлант</option>
-                  <option>Гефест</option>
+                  {FreezingSystemOptions}
               </select>
+
               <CategoryName>Магазины</CategoryName>
-              <div style={{
-                  display: 'flex',
-              }}>
-                  <div style={{
-                      display: 'flex',
-                  }}>
-                  <input type={'checkbox'} style={{height: '15px', width: '15px'}}/>
-                      <span style={{
-                          fontSize: '14px',
-                      }}>Склад</span>
-                  </div>
-                  <div style={{
-                      display: 'flex',
-                      marginLeft: '3%',
-                  }}>
-                  <input type={'checkbox'} style={{height: '15px', width: '15px'}}/>
-                      <span style={{
-                      fontSize: '14px',
-                  }}>ТЦ "Глобо"</span>
-                  </div>
+              <div className={'LocationFiltersWrapper'}>
+              <LocationFilter
+                  LocationName={'Склад'}
+              />
+              <LocationFilter
+                  LocationName={'ТЦ "Глобо"'}
+              />
               </div>
+
+
           </div>
 
   )

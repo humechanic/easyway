@@ -1,0 +1,31 @@
+.ProductSlider {
+  height: 500px;
+  width: 400px;
+}
+
+.ProductSlide > img {
+  max-height: 400px;
+  min-width: 30%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.ProductCarouselDots {
+  display: flex !important;
+  list-style: none;
+  justify-content: center;
+}
+
+.ProductCarouselDots > li {
+  margin: 2%;
+}
+
+.ProductCarouselDots > li > div > img {
+  height: 70px;
+  width: 70px;
+}
+
+.ProductSlider> .slick-slider > button {
+  display: none !important;
+}
+

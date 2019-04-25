@@ -10,10 +10,14 @@
   margin: 20px;
 }
 
-.ProductDescriPosition {
+.ProductDetails {
+  display: flex;
   flex-flow: wrap column;
-  margin-top: 3%;
-  flex-basis: 80%;
+  flex-basis: 60%;
+}
+
+.ProductDescriPosition {
+width: 600px;
 }
 
 .ProductName, .ProductDesc {
@@ -26,6 +30,11 @@
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+}
+
+.CatalogueProductName {
+  display: flex;
+  flex-basis: 20%;
 }
 
 .ProductPrice, .Offers {
@@ -46,5 +55,6 @@
   display: flex;
   justify-content: center;
   flex-flow: wrap column;
-  margin-left: 10%;
+  margin-left: 2%;
+  flex-basis: 20%;
 }
