@@ -1,7 +1,7 @@
 .CatalogueProductItem {
   display: flex;
-  flex-basis: 75%;
   border-bottom: 1px solid lightgrey;
+  width: 98%;
 }
 
 .itemImage {
@@ -17,7 +17,7 @@
 }
 
 .ProductDescriPosition {
-width: 600px;
+  width: 600px;
 }
 
 .ProductName, .ProductDesc {
@@ -26,15 +26,18 @@ width: 600px;
 
 }
 
+
 .ProductName {
+  margin-top: 6%;
+  margin-bottom: 3%;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+  z-index: 99;
 }
 
 .CatalogueProductName {
   display: flex;
-  flex-basis: 20%;
 }
 
 .ProductPrice, .Offers {

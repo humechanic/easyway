@@ -188,7 +188,6 @@ const MainPage = props.MainPage;
                                         path={StockList.path}
                                     />
                                 </Link>
-                                <Route path='/sales/:id' component={singleElement}/>
                             </>
                         )
                     })
@@ -202,7 +201,7 @@ export const singleElement = (props) => {
     const SingleStockElement = StockAPI.get(props.match.params.salePath);
 
     if (!SingleStockElement) {
-        return <div>Sorry, but page was not found</div>
+        return <div>Sorry, but the page wasn't found</div>
     }
     return (
         <>

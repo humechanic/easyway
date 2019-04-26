@@ -1,10 +1,9 @@
 import React from 'react'
 import CatalogueProductItem from "./CatalogueProductItem/CatalogueProductItem";
 import './AllProducts.css'
-import { Route, Switch } from 'react-router-dom'
 import CatalogueFilter from "../CatalogueFilterbar/CatalogueFilters";
 import ProductAmount from "./CatalogueProductAmount/ProductAmount";
-import ProductPage from "../../../containers/Pages/CataloguePages/ProductPage";
+
 
 const AllProducts = (props) => {
     return (
@@ -14,7 +13,6 @@ const AllProducts = (props) => {
             {
                 props.products.map((Products, index) => {
                     return (
-
                         <CatalogueProductItem
                             key={{index} + `${Products.id}`}
                             itemImg={Products.itemImg}

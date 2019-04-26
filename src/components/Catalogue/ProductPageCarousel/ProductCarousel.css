@@ -1,5 +1,5 @@
 .ProductSlider {
-  height: 500px;
+  height: 600px;
   width: 400px;
 }
 
@@ -13,7 +13,9 @@
 .ProductCarouselDots {
   display: flex !important;
   list-style: none;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-left: 4%;
 }
 
 .ProductCarouselDots > li {

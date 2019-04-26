@@ -1,0 +1,26 @@
+.CatalogueProductDetails > p {
+  font-weight: bold;
+  font-size: 17px;
+}
+.CatalogueProductDetails > h2 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+.CatalogueProductDetails > hr {
+  margin: 5% auto 5% auto;
+  border: 0.1px solid lightgrey;
+}
+.DetailedDescription {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.DetailedDescription> span {
+  flex-basis: 50%;
+  justify-content: flex-start;
+  margin: 1% 0 1% 0;
+  font-family: "Roboto", sans-serif;
+}

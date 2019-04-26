@@ -1,11 +1,17 @@
 import React from 'react';
 
-const CataloguePruductItemImage = (props) => {
+const CatalogueProductItemImage = (props) => {
+    const ProductPage = props.ProductPage;
+    if (ProductPage) {
+        return (
+            null
+        )
+    }
   return (
       <div className={'itemImage'}>
-          <img src={[props.itemImg]} alt={'item'}/>
+          <img src={[props.itemImg]} alt={null}/>
       </div>
   )
 };
 
-export default CataloguePruductItemImage;
+export default CatalogueProductItemImage;
