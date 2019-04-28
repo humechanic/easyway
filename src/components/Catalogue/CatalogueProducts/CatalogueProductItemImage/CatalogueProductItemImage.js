@@ -9,7 +9,7 @@ const CatalogueProductItemImage = (props) => {
     }
   return (
       <div className={'itemImage'}>
-          <img src={[props.itemImg]} alt={null}/>
+          <img src={[props.itemImg]} alt={''}/>
       </div>
   )
 };

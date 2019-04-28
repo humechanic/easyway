@@ -5,7 +5,7 @@ const FeedbackItem = (props) => {
     return (
         <div className={"FeedbackItem"}>
             <div className={"User"}>
-                <img src={[props.userAvatar]}/>
+                <img src={[props.userAvatar]} alt={''}/>
                 <span>{props.username}</span>
             </div>
             <div className={"UserFeedback"}>

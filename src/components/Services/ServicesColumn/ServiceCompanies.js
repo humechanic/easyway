@@ -56,6 +56,7 @@ const ServiceCompanies = (props) => {
             {Services.map((services, index) => {
                 return (
                     <ServiceItem
+                        key={index + [services.location]}
                         serviceName={services.name}
                         serviceLocation={services.location}
                         serviceWorktime={services.prime}

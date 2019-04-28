@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import classes from './Layout.module.css';
-import {Switch, Route} from 'react-router-dom'
-import HomePage from "../Pages/Home";
-import AboutPage from "../Pages/About";
+
 class Layout extends Component {
     render() {
         return (

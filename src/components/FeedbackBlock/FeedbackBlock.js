@@ -72,7 +72,7 @@ class FeedbackBlock extends Component{
                 {
                     this.state.Feedback.map((Feedback, index) => {
                         return <FeedbackItem
-                            key={index}
+                            key={index + [Feedback.username]}
                             username={Feedback.username}
                             feedbackText={Feedback.feedbackText}
                             userAvatar={Feedback.userAvatar}

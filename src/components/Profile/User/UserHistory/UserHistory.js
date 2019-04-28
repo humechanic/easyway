@@ -49,7 +49,7 @@ class UserHistory extends Component{
                     {
                         this.state.UserPaymentHistory.map((UserPaymentHistory, index) => {
                             return (
-                                <ul key={index} className={"Payments"}>
+                                <ul key={index + [UserPaymentHistory.Organization]} className={"Payments"}>
                                     <li>{UserPaymentHistory.Date}</li>
                                     <li>{UserPaymentHistory.Organization}</li>
                                     <li>{UserPaymentHistory.Sum}</li>

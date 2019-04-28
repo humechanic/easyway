@@ -7,7 +7,7 @@ import TextBlock from "../../components/TextBlock/TextBlock";
 import AboutPageImg from "../../img/AboutPage/AboutPage.png";
 import Breadcrumbs from './../../components/Breadcrumbs/Breadcrumb';
 
-const AboutPage = ({match}) => {
+const AboutPage = () => {
         return (
             <Content>
                 <Header/>

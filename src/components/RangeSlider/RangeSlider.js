@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Slider, Rail, Handles, Tracks } from 'react-compound-slider';
 import { SliderRail, Handle, Track } from './SliderRail';
 import PriceFilter from './../Catalogue/PriceFilter';
-import Products from "../../containers/Pages/Products";
 
 const sliderStyle = {
     position: 'relative',

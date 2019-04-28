@@ -46,7 +46,7 @@ class ProjectList extends Component {
                 {
                     this.state.Projects.map((Projects, index) => {
                         return <ProjectListItem
-                            key={index}
+                            key={index + [Projects.title]}
                             title={Projects.title}
                             projectImage={Projects.ProjectImage}
                             info={Projects.info}

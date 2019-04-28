@@ -24,35 +24,27 @@ const HomePage = () => {
             <MoneyBlock/>
             <Stock MainPage={true}
             />
-
             <CurvyTitle title={'Все новости'}
                         buttonType={"yellow"}
                         titleStyle={"textBlack"}
             />
-
             <BlockTitle
                 title={'Отзывы'}
                 link={'#'}
                 linkName={'Все отзывы'}
             />
-
             <FeedbackBlock/>
-
             <BlockTitle
                 title={'Новости'}
                 link={'#'}
                 linkName={'Все новости'}
             />
-
             <NewsBlock/>
-
             <BlockTitle
                 title={'Помогать вместе - просто!'}
             />
-
             <ShortInfoBlock/>
             <Footer/>
-
         </Content>
     );
 };

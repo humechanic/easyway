@@ -7,7 +7,7 @@ import { Route, Switch} from 'react-router-dom'
 import BlockTitle from "../../components/BlockTitle/BlockTitle";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumb";
 
-const Sales = (props, {match}) => {
+const Sales = () => {
         return (
             <Content>
                 <Header/>

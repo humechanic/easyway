@@ -1,7 +1,7 @@
 import React from 'react';
 import './ShortInfoBlock.css';
 
-const ShorInfoBlock = (props) => {
+const ShortInfoBlock = (props) => {
         return (
             <div className={"ShortInfoBlock"}>
                 <p>
@@ -11,7 +11,7 @@ const ShorInfoBlock = (props) => {
         )
 };
 
-ShorInfoBlock.defaultProps = {
+ShortInfoBlock.defaultProps = {
     firstWord: 'EASY WAY', //bold
     infoText: ' – это центр поддержки общественно полезных проектов, в фундаменте которого лежит уникальный\n' +
     '                    механизм – аукцион встреч. EASY WAY – это место, где Вы можете выставить встречу с собой на аукцион\n' +
@@ -20,4 +20,4 @@ ShorInfoBlock.defaultProps = {
     '                    получить новый незабываемый опыт и установить полезные контакты.',
 };
 
-export default ShorInfoBlock;
+export default ShortInfoBlock;

@@ -36,7 +36,7 @@ class NewsBlock extends Component{
                 {
                     this.state.News.map((News, index) => {
                         return <NewsBlockItem
-                            key={index}
+                            key={index + [News.title]}
                             title={News.title}
                             background={News.background}
                         />

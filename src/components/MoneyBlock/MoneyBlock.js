@@ -32,7 +32,7 @@ class MoneyBlock extends Component{
                 {
                     this.state.MoneyBlockList.map((MoneyBlockList, index) => {
                         return <MoneyBlockItem
-                            key={index}
+                            key={index + [MoneyBlockList.title]}
                             style={MoneyBlockList.style}
                             amount={MoneyBlockList.amount}
                             title={MoneyBlockList.title}

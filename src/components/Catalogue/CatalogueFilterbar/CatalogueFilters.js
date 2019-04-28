@@ -1,12 +1,14 @@
 import React from 'react';
 import './CatalogueFilters.css';
 
-const CatalogueFilter = () => {
+
+
+const CatalogueFilter = (props) => {
     return (
         <div className={'filterBar'}>
             <div className={'filterButtons'}>
-            <button><i className="fas fa-th"> </i></button>
-            <button><i className="fas fa-th-list"> </i></button>
+            <button onClick={() => props.showAsBlock(true)}><i className="fas fa-th"> </i></button>
+            <button onClick={() => props.showAsBlock(false)}><i className="fas fa-th-list"> </i></button>
             </div>
             <ul>
                 <li>По цене</li>

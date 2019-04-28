@@ -1,6 +1,5 @@
 import React from 'react';
 import LogoHeader from '../../img/MainPage/Logo.png';
-import LogoFooter from '../../img/MainPage/Logo1.png';
 import { Link } from 'react-router-dom';
 import './LogoIcon.css'
 

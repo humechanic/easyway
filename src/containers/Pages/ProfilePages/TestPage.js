@@ -26,5 +26,5 @@ const TestPage = ({ match }) => {
             </Content>
 
         )
-}
+};
 export default TestPage;

@@ -1,7 +1,7 @@
 import React from 'react';
 import StockItem from './StockItem';
 import './Stock.css';
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import CurvyTitle from "../CurvyWavePageDecor/CurvyTitle";
 import TextBlock from "../TextBlock/TextBlock";
 
@@ -175,7 +175,7 @@ const MainPage = props.MainPage;
                         return (
                             <>
                                 <Link
-                                    key={`${StockList.path}` + {index} + 1}
+                                    key={`${StockList.path}` + {index} + [StockList.title]}
                                     to={`/sales/${StockList.path}`}
                                     className={[StockList.background] + " StockItem"}>
                                     <StockItem
@@ -229,7 +229,6 @@ export const singleElement = (props) => {
         </>
     )
 };
-
 
 
 export default Stock;

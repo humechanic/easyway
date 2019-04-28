@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react';
 import Content from "../../content/Content";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
@@ -9,7 +9,6 @@ import Button from "../../../components/Button/Button";
 import ProjectList from "../../../components/ProjectList/ProjectList";
 import IndividualData from "../../../components/Profile/User/IndividualData/IndividualData";
 import AutoCharity from "../../../components/Form/Form";
-import { Route} from 'react-router-dom';
 
 
 const IndividualProfile = ({match}) => {

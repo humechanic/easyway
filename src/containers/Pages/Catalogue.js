@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from "../Layout/Layout";
 import Content from "../content/Content";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -17,7 +16,7 @@ const ProductAPI = {
             productName: 'Холодильник ATLANT МХМ 2826-90',
             productDesc: 'без всяких там No Frost, механическое управление, класс A, полезный объём: 288 л (235 + 53 л), 60x63x167 см, белый',
             itemImg: itemImage,
-            productPrice: '900,00',
+            productPrice: 900,
             offers: '13',
             design: 'свободностоящее',
             construction: 'с нижней морозильной камерой',
@@ -37,7 +36,7 @@ const ProductAPI = {
             productName: 'Холодильник ATLANT МХМ 2226-90',
             productDesc: 'без No Frost, механическое управление, класс A, полезный объём: 288 л (235 + 53 л), 60x63x167 см, белый',
             itemImg: itemImage,
-            productPrice: '130,00',
+            productPrice: 130,
             offers: '12',
             design: 'дностоящее',
             construction: 'с ержановской морозильной камерой',
@@ -57,7 +56,7 @@ const ProductAPI = {
             productName: 'Холодильник BOSCH МХМ 4446-90',
             productDesc: 'заменить текст No Frost, механическое управление, класс A, полезный объём: 288 л (235 + 53 л), 60x63x167 см, белый',
             itemImg: itemImage,
-            productPrice: '100,00',
+            productPrice: 100,
             offers: '15',
             design: 'стоящее на коне, как Король Ночи',
             construction: 'с нночной морозильной камерой',

@@ -1,4 +1,4 @@
-.Products {
+.ProductContainer {
   display: flex;
   flex-direction: column;
   flex-basis: 80%;
@@ -7,4 +7,10 @@
 .productAmount {
   font-weight: normal;
   margin: 5px 0 5px 0;
+}
+
+.Products {
+  display: inherit;
+  flex-wrap: wrap;
+  justify-content: center;
 }

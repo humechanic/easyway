@@ -15,7 +15,7 @@ export default class ProductCarousel extends Component {
         const settings = {
             customPaging: i => (
                 <div>
-                    <img src={require(`./../../../img/Catalogue/itemImage${i + 1}.png`)}/>
+                    <img src={require(`./../../../img/Catalogue/itemImage${i + 1}.png`)} alt={''}/>
                 </div>
             ),
             dotsClass: 'ProductCarouselDots',
@@ -24,24 +24,24 @@ export default class ProductCarousel extends Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-        }
+        };
         return (
             <div className={'ProductSlider'}>
                 <Slider {...settings}>
                     <div className={'ProductSlide'}>
-                        <img src={itemImage1}/>
+                        <img src={itemImage1} alt={''}/>
                     </div>
                     <div className={'ProductSlide'}>
-                        <img src={itemImage2}/>
+                        <img src={itemImage2} alt={''}/>
                     </div>
                     <div className={'ProductSlide'}>
-                        <img src={itemImage3}/>
+                        <img src={itemImage3} alt={''}/>
                     </div>
                     <div className={'ProductSlide'}>
-                        <img src={itemImage4}/>
+                        <img src={itemImage4} alt={''}/>
                     </div>
                     <div className={'ProductSlide'}>
-                        <img src={itemImage5}/>
+                        <img src={itemImage5} alt={''}/>
                     </div>
                 </Slider>
             </div>

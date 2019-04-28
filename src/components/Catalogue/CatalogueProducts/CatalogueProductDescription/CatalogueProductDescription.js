@@ -7,7 +7,7 @@ const CatalogueProductDescription = (props) => {
             <div className={'ProductDescriPosition'}>
                 <span className={'ProductDesc'}>{props.productDesc}</span>
                 <span className={'ProductDesc'}>
-                    от&nbsp;<span className={'ProductPrice'}>{props.productPrice}</span>&nbsp;руб.</span>
+                    от&nbsp;<span className={'ProductPrice'}>{props.productPrice.toFixed(2)}</span>&nbsp;руб.</span>
                 <Rating/>
             </div>
         </>

@@ -10,7 +10,6 @@ import CurvyTitle from "../../../components/CurvyWavePageDecor/CurvyTitle";
 import TextBlock from "../../../components/TextBlock/TextBlock";
 import Button from "../../../components/Button/Button";
 import ProjectList from "../../../components/ProjectList/ProjectList";
-import { Route} from 'react-router-dom';
 
 
 

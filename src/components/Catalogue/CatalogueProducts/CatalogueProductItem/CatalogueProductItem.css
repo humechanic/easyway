@@ -61,3 +61,25 @@
   margin-left: 2%;
   flex-basis: 20%;
 }
+
+.displayBlock {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  flex-flow: row;
+  width: 400px;
+  
+}
+
+.displayBlockDetails {
+  width: 10%;
+}
+
+.displayBlock > .OffersAndBuy {
+  display: none;
+}
+
+.displayBlockDetails > .ProductDescriPosition {
+  width: 200px;
+}

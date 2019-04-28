@@ -40,7 +40,7 @@ class Menu extends Component {
                     <ul className={"Links"}>
                         {
                             this.state.MenuList.map((MenuList, index) => {
-                                return <MenuItem key={index}
+                                return <MenuItem key={index + [MenuList.title]}
                                                  title={MenuList.title}
                                                  type={this.props.type}
                                                  path={MenuList.path}/>
