@@ -9,8 +9,7 @@ import ServiceCompanies from "../../components/Services/ServicesColumn/ServiceCo
 import BankMap from "../../components/Services/ServiceMaps/BankMap";
 import Content from "../content/Content";
 
-const Service = () => {
-
+const Service = (props) => {
     return (
         <Content>
             <Header/>
@@ -22,7 +21,7 @@ const Service = () => {
             />
             <SearchBar/>
             <ServiceList/>
-            <ServiceCompanies/>
+            <ServiceCompanies />
             <BankMap/>
             <Footer/>
         </Content>

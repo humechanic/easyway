@@ -18,7 +18,7 @@ const App = (props) => {
                     <Route path="/about" component={AboutPage} />
                     <Route path="/contacts" component={Contacts} />
                     <Route path="/profile" component={TestPage} />
-                    <Route path="/sales" render={ () => <Sales />}/>
+                    <Route path="/sales" component={Sales}/>
                     <Route path="/catalogue" component={Catalogue}/>
                     <Route path="/service" component={Service}/>
                 </Switch>

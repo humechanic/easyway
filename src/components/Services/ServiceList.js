@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {ServiceSubListBusiness,
     ServiceSubListHousehold,
     ServiceSubListCleaning,
@@ -6,57 +6,62 @@ import {ServiceSubListBusiness,
     ServiceSubListZoo,
     ServiceSubListTaxi
 } from "./ServiceSubList";
-import './ServiceList.css'
+import './ServiceList.css';
+import {serviceSublistAC} from "../../redux/reducers/servicePageReducer";
+import {connect} from 'react-redux';
 
-class ServiceList extends Component {
+const ServiceList = (props) => {
 
-state = {
-   servicesSubList: <ServiceSubListBusiness/>,
-    active: false,
-    name: 'business',
-};
-
- showServiceSubList = (subList, name) => {
-     return (
-         this.setState({
-             servicesSubList: subList,
-             name: name,
-         })
-     )
- };
-    isActive(value) {
-        return ((value === this.state.name) ? 'active' : null );
+    function isActive(value) {
+        return ((value === props.serviceList) ? 'active' : null);
     }
 
-    render() {
-        return (
-            <>
+    return (
+        <>
+            <ul className={'Services'}>
+                <li className={isActive('business')}
+                    onClick={() => props.showServiceSubList(<ServiceSubListBusiness/>, 'business')}>
+                    Услуги для бизнеса
+                </li>
+                <li className={isActive('household')}
+                    onClick={() => props.showServiceSubList(<ServiceSubListHousehold/>, 'household')}>
+                    Бытовые услуги
+                </li>
+                <li className={isActive('cleaning')}
+                    onClick={() => props.showServiceSubList(<ServiceSubListCleaning/>, 'cleaning')}>
+                    Химчистка и прачечные
+                </li>
+                <li className={isActive('restaurant')}
+                    onClick={() => props.showServiceSubList(<ServiceSubListRestaurant/>, 'restaurant')}>
+                    Рестораны и кафе
+                </li>
+                <li className={isActive('zoo')}
+                    onClick={() => props.showServiceSubList(<ServiceSubListZoo/>, 'zoo')}>
+                    Зоомагазины
+                </li>
+                <li className={isActive('taxi')}
+                    onClick={() => props.showServiceSubList(<ServiceSubListTaxi/>, 'taxi')}>
+                    Такси
+                </li>
+            </ul>
+            <div className={'ServiceSubList'}>{props.servicesSubList}</div>
+        </>
+    )
+};
 
-                <ul className={'Services'}>
-                    <li
-                        className={this.isActive('business')}
-                        onClick={this.showServiceSubList.bind(this, <ServiceSubListBusiness/>, 'business')}>
-                        Услуги для бизнеса</li>
-                    <li className={this.isActive('household')}
-                        onClick={this.showServiceSubList.bind(this, <ServiceSubListHousehold/>, 'household')}>
-                        Бытовые услуги</li>
-                    <li className={this.isActive('cleaning')}
-                        onClick={this.showServiceSubList.bind(this, <ServiceSubListCleaning/>, 'cleaning')}>
-                        Химчистка и прачечные</li>
-                    <li className={this.isActive('restaurant')}
-                        onClick={this.showServiceSubList.bind(this, <ServiceSubListRestaurant/>, 'restaurant')}>
-                        Рестораны и кафе</li>
-                    <li className={this.isActive('zoo')}
-                        onClick={this.showServiceSubList.bind(this, <ServiceSubListZoo/>, 'zoo')}>
-                        Зоомагазины</li>
-                    <li className={this.isActive('taxi')}
-                        onClick={this.showServiceSubList.bind(this, <ServiceSubListTaxi/>, 'taxi')}>
-                        Такси</li>
-                </ul>
-            <div className={'ServiceSubList'}>{this.state.servicesSubList}</div>
-            </>
-        )
+function mapStateToProps(state) {
+    return {
+        servicesSubList: state.servicePage.ServiceList.servicesSubList,
+        serviceList: state.servicePage.ServiceList.name
     }
 }
 
-export default ServiceList;
+function mapDispatchToProps(dispatch) {
+    return {
+        showServiceSubList: (subList, name) => {
+            dispatch(serviceSublistAC(subList, name))
+        },
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ServiceList);

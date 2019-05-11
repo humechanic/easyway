@@ -6,10 +6,11 @@ import CatalogueProductName from "../../../components/Catalogue/CatalogueProduct
 import './ProductPage.css';
 import CatalogueProductDetails
     from "../../../components/Catalogue/CatalogueProducts/CatalogueProductDetails/CatalogueProductDetails";
+import {connect} from 'react-redux';
 
 const ProductPage = (props) => {
 
-    const SingleProductPage = props.products.get(props.match.params.itemDetails);
+    const SingleProductPage = props.singleProduct.getProduct(props.match.params.itemDetails);
 
     if (!SingleProductPage) {
         return (
@@ -53,4 +54,10 @@ const ProductPage = (props) => {
       )
   };
 
-export default withRouter(ProductPage);
+function mapStateToProps(state) {
+    return {
+        singleProduct: state.cataloguePage,
+    }
+}
+
+export default connect(mapStateToProps)(withRouter(ProductPage));

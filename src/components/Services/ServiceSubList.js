@@ -72,7 +72,7 @@ export const ServiceSubListHousehold = props => {
         </ul>
     )
 };
-export const ServiceSubListBusiness = (props) => {
+export const ServiceSubListBusiness = props => {
 
     return (
 

@@ -13,7 +13,7 @@ import Content from "../content/Content";
 import Header from "../../components/header/Header";
 import Stock from "../../components/Stock(Sales)/Stock";
 
-const HomePage = () => {
+const HomePage = (props) => {
 
     return (
         <Content>
@@ -22,8 +22,7 @@ const HomePage = () => {
             <Carousel/>
             <Charity/>
             <MoneyBlock/>
-            <Stock MainPage={true}
-            />
+            <Stock MainPage={true}/>
             <CurvyTitle title={'Все новости'}
                         buttonType={"yellow"}
                         titleStyle={"textBlack"}

@@ -9,7 +9,6 @@ const CataloguePage = props.CataloguePage;
                 <input
                     type="text"
                     placeholder="Поиск по каталогу"
-
                 />
             </div>
         )
@@ -20,7 +19,6 @@ const CataloguePage = props.CataloguePage;
                 <input
                     type="text"
                     placeholder="Поиск по каталогу"
-
                 />
             </div>
         )

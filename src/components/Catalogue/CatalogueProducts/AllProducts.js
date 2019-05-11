@@ -1,36 +1,25 @@
-import React, {Component} from 'react'
+import React from 'react';
 import CatalogueProductItem from "./CatalogueProductItem/CatalogueProductItem";
-import './AllProducts.css'
+import './AllProducts.css';
 import CatalogueFilter from "../CatalogueFilterbar/CatalogueFilters";
 import ProductAmount from "./CatalogueProductAmount/ProductAmount";
+import {connect} from 'react-redux';
+import {displayBlockAC, displayListAC} from './../../../redux/reducers/cataloguePageReducer';
 
-
-class AllProducts extends Component {
-    state = {
-        displayBlock: false,
-        sorted: {price: false, sale: false, mostBought: false},
-    };
-
-    showAsBlock = (showAsBlock) => {
-        this.setState({
-            displayBlock: showAsBlock,
-        });
-    };
-
-
-    render() {
-        return (
-            <div className={'ProductContainer'}>
-                <ProductAmount products={this.props.products}/>
-                <CatalogueFilter showAsBlock={this.showAsBlock}
-                />
-                <div className={'Products'}>
+const AllProducts = (props) => {
+    return (
+        <div className={'ProductContainer'}>
+            <ProductAmount products={props.products}/>
+            <CatalogueFilter
+                showAsBlock={props.displayAsBlock}
+                showAsList={props.displayAsList}
+            />
+            <div className={'Products'}>
                 {
-                    this.props.products.map((Products, index) => {
+                    props.products.map((Products, index) => {
                         return (
-
                             <CatalogueProductItem
-                                displayBlock={this.state.displayBlock}
+                                displayBlock={props.displayBlock}
                                 key={{index} + `${Products.id}`}
                                 itemImg={Products.itemImg}
                                 productName={Products.productName}
@@ -42,10 +31,27 @@ class AllProducts extends Component {
                         )
                     })
                 }
-                </div>
             </div>
-        )
+        </div>
+    )
+};
+
+function mapStateToProps(state) {
+    return {
+        products: state.cataloguePage.allProducts(),
+        displayBlock: state.cataloguePage.ProductsPageState.displayBlock
     }
 }
 
-export default AllProducts;
+function mapDispatchToProps(dispatch) {
+    return {
+        displayAsBlock: () => {
+            dispatch(displayBlockAC());
+        },
+        displayAsList: () => {
+            dispatch(displayListAC());
+        },
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AllProducts);

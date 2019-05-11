@@ -108,45 +108,42 @@ const FreezingSystemOptions = FreezingSystem.List.map((FreezingSystem, index) =>
 });
 
 
-const CategoryList = (props) => {
-  return (
-          <div className={'Categories'}>
-              <h3>Холодильники</h3>
-              <CategoryName>{Design.categoryName}</CategoryName>
-              <select className={'selects'}>
-                  {DesignOptions}
-              </select>
-              <CategoryName>{BrandName.categoryName}</CategoryName>
-              <select className={'selects'}>
-                  {BrandNameOptions}
-              </select>
-              <CategoryName>{Construction.categoryName}</CategoryName>
-              <select className={'selects'}>
-                  {ConstructionOptions}
-              </select>
-              <CategoryName>Цена</CategoryName>
+const CategoryList = () => {
+    return (
+        <div className={'Categories'}>
+            <h3>Холодильники</h3>
+            <CategoryName>{Design.categoryName}</CategoryName>
+            <select className={'selects'}>
+                {DesignOptions}
+            </select>
+            <CategoryName>{BrandName.categoryName}</CategoryName>
+            <select className={'selects'}>
+                {BrandNameOptions}
+            </select>
+            <CategoryName>{Construction.categoryName}</CategoryName>
+            <select className={'selects'}>
+                {ConstructionOptions}
+            </select>
+            <CategoryName>Цена</CategoryName>
 
-              <RangeSlider products={props.products}/>
+            <RangeSlider/>
 
-              <CategoryName>{FreezingSystem.categoryName}</CategoryName>
-              <select className={'selects'}>
-                  {FreezingSystemOptions}
-              </select>
+            <CategoryName>{FreezingSystem.categoryName}</CategoryName>
+            <select className={'selects'}>
+                {FreezingSystemOptions}
+            </select>
 
-              <CategoryName>Магазины</CategoryName>
-              <div className={'LocationFiltersWrapper'}>
-              <LocationFilter
-                  LocationName={'Склад'}
-              />
-              <LocationFilter
-                  LocationName={'ТЦ "Глобо"'}
-              />
-              </div>
-
-
-          </div>
-
-  )
+            <CategoryName>Магазины</CategoryName>
+            <div className={'LocationFiltersWrapper'}>
+                <LocationFilter
+                    LocationName={'Склад'}
+                />
+                <LocationFilter
+                    LocationName={'ТЦ "Глобо"'}
+                />
+            </div>
+        </div>
+    )
 };
 
 export default CategoryList;

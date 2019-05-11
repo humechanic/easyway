@@ -1,50 +1,38 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './IndividualData.css';
-import Avatar from './../../../../img/UserProfile/IndAvatar.png';
+import {connect} from "react-redux";
 
-class IndividualData extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-            Avatar: Avatar,
-            Name: 'ЮРИЙ СЕМЕНОВИЧ',
-            RegistrationDate: '19.01.2005',
-            Age: '29',
-            Phone: '+375 11 123 45 67',
-        }
-    }
-
-    render() {
+const IndividualData = (props) => {
         return (
             <div className={"IndividualBlock"}>
                 <div className={"IndividualUserAvatar"}>
-                    <img src={this.state.Avatar} alt={'avatar'}/>
+                    <img src={props.userData.avatar} alt={'avatar'}/>
                     <a className={"Edit"} href={"#top"}>редактировать</a>
-
                 </div>
                 <div className={"UserInfo"}>
-                    <p>{this.state.Name}</p>
+                    <p>{props.userData.name}</p>
 
                     <p className={"Weak"}>Зарегистрирован:<br/>
-                        <span className={"UserInfoText"}>{this.state.RegistrationDate}</span>
+                        <span className={"UserInfoText"}>{props.userData.registrationDate}</span>
                     </p>
 
                     <p className={"Weak"}>Возраст:<br/>
-                        <span className={"UserInfoText"}>{this.state.Age}</span>
+                        <span className={"UserInfoText"}>{props.userData.age}</span>
                     </p>
 
                     <p className={"Weak"}>Телефон:<br/>
-                        <span className={"UserInfoText"}>{this.state.Phone}</span>
+                        <span className={"UserInfoText"}>{props.userData.phone}</span>
                     </p>
-
                 </div>
-                {this.props.children}
+                {props.children}
             </div>
-
-
         )
+};
+
+function mapStateToProps(state) {
+    return {
+        userData: state.userData.PersonalInformation[0],
     }
 }
 
-export default IndividualData;
+export default connect(mapStateToProps)(IndividualData);

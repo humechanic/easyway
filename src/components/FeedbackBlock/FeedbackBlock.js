@@ -1,88 +1,29 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './FeedbackBlock.css';
 import FeedbackItem from './FeedbackItem';
-import Avatar from './../../img/MainPage/Avatar.png';
-import Avatar1 from './../../img/MainPage/Avatar1.png';
+import {connect} from 'react-redux';
 
-class FeedbackBlock extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            Feedback: [
-                {
-                    username: 'Анна',
-                    feedbackText: 'Большое спасибо! Работой монтажников очень довольна.' +
-                    ' Все выполнено качественно и в срок. ' +
-                    'Очень порядочные и внимательные. ' +
-                    'Все сотрудники приветливы и отзывчивы. ' +
-                    'Полностью удовлетворена работой компании. ',
-                    userAvatar: Avatar,
-                },
-                {
-                    username: 'Юлия',
-                    feedbackText: 'Большое спасибо! Работой монтажников очень довольна.' +
-                    ' Все выполнено качественно и в срок. ' +
-                    'Очень порядочные и внимательные. ' +
-                    'Все сотрудники приветливы и отзывчивы. ' +
-                    'Полностью удовлетворена работой компании. ',
-                    userAvatar: Avatar1,
-                },
-                {
-                    username: 'Алена',
-                    feedbackText: 'Большое спасибо! Работой монтажников очень довольна.' +
-                    ' Все выполнено качественно и в срок. ' +
-                    'Очень порядочные и внимательные. ' +
-                    'Все сотрудники приветливы и отзывчивы. ' +
-                    'Полностью удовлетворена работой компании. ',
-                    userAvatar: Avatar,
-                },
-                {
-                    username: 'Евдотья',
-                    feedbackText: 'Большое спасибо! Работой монтажников очень довольна.' +
-                    ' Все выполнено качественно и в срок. ' +
-                    'Очень порядочные и внимательные. ' +
-                    'Все сотрудники приветливы и отзывчивы. ' +
-                    'Полностью удовлетворена работой компании. ',
-                    userAvatar: Avatar1,
-                },
-                {
-                    username: 'Карина',
-                    feedbackText: 'Большое спасибо! Работой монтажников очень довольна.' +
-                    ' Все выполнено качественно и в срок. ' +
-                    'Очень порядочные и внимательные. ' +
-                    'Все сотрудники приветливы и отзывчивы. ' +
-                    'Полностью удовлетворена работой компании. ',
-                    userAvatar: Avatar,
-                },
-                {
-                    username: 'Укупник',
-                    feedbackText: 'Большое спасибо! Работой монтажников очень довольна.' +
-                    ' Все выполнено качественно и в срок. ' +
-                    'Очень порядочные и внимательные. ' +
-                    'Все сотрудники приветливы и отзывчивы. ' +
-                    'Полностью удовлетворена работой компании. ',
-                    userAvatar: Avatar1,
-                },
+const FeedbackBlock = (props) => {
+    return (
+        <div className={"FeedbackBlock"}>
+            {
+                props.feedback.map((Feedback, index) => {
+                    return <FeedbackItem
+                        key={index + [Feedback.username]}
+                        username={Feedback.username}
+                        feedbackText={Feedback.feedbackText}
+                        userAvatar={Feedback.userAvatar}
+                    />
+                }).slice(0, 2)
+            }
+        </div>
+    )
+};
 
-            ]
-        }
-    }
-    render() {
-        return ( <div className={"FeedbackBlock"}>
-                {
-                    this.state.Feedback.map((Feedback, index) => {
-                        return <FeedbackItem
-                            key={index + [Feedback.username]}
-                            username={Feedback.username}
-                            feedbackText={Feedback.feedbackText}
-                            userAvatar={Feedback.userAvatar}
-                        />
-                    } ).slice(0, 2)
-                }
-            </div>
-
-        )
+function mapStateToProps(state) {
+    return {
+        feedback: state.feedbackPage.Feedback,
     }
 }
 
-export default FeedbackBlock;
+export default connect(mapStateToProps)(FeedbackBlock);

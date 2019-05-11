@@ -1,49 +1,30 @@
-import React, {Component} from 'react';
+import React from 'react';
 import MoneyBlockItem from './MoneyBlockItem';
 import './MoneyBlock.css';
+import {connect} from 'react-redux'
 
-class MoneyBlock extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            MoneyBlockList: [
-                {
-                    title: 'получено средств',
-                    amount:'19900',
-                    style:'blueBox',
-                },
-                {
-                    title:'не распределено',
-                    amount:'4002',
-                    style:'redBox',
-                },
-                {
-                    title:'пожертвовано',
-                    amount:'15898',
-                    style:'yellowBox',
-                },
-            ],
+const MoneyBlock = (props) => {
 
-        }
-    };
-    render () {
-        return ( <div className={"MoneyBlockList"}>
+    return (
+        <div className={"MoneyBlockList"}>
+            {
+                props.moneyBlockList.map((MoneyBlockList, index) => {
+                    return <MoneyBlockItem
+                        key={index + [MoneyBlockList.title]}
+                        style={MoneyBlockList.style}
+                        amount={MoneyBlockList.amount}
+                        title={MoneyBlockList.title}
+                    />
+                })
+            }
+        </div>
+    )
+};
 
-                {
-                    this.state.MoneyBlockList.map((MoneyBlockList, index) => {
-                        return <MoneyBlockItem
-                            key={index + [MoneyBlockList.title]}
-                            style={MoneyBlockList.style}
-                            amount={MoneyBlockList.amount}
-                            title={MoneyBlockList.title}
-                        />
-                    })
-                }
-
-            </div>
-        )
+function mapStateToProps(state) {
+    return {
+        moneyBlockList: state.homePage.MoneyBlockList,
     }
-
 }
 
-export default MoneyBlock;
+export default connect(mapStateToProps)(MoneyBlock);

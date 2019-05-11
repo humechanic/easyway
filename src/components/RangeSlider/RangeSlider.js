@@ -78,7 +78,7 @@ class RangeSlider extends Component {
 
                 </Slider>
 
-                <PriceFilter prices={this.props.products} values={values}/>
+                <PriceFilter values={values}/>
             </div>
         )
     }
