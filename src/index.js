@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollToTop from './components/Utils/ScrollToTop/ScrollToTop'
-import SPAData from "./redux/state";
 import {Provider} from 'react-redux';
 import store from './redux/redux-store';
 
@@ -13,7 +12,7 @@ ReactDOM.render(
     <BrowserRouter>
         <Provider store={store}>
             <ScrollToTop>
-                <App SPAData={SPAData}/>
+                <App/>
             </ScrollToTop>
         </Provider>
     </BrowserRouter>,

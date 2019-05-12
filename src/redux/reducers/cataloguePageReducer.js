@@ -1,6 +1,5 @@
 import itemImage from './../../img/Catalogue/itemImage.png';
 
-
 const DISPLAY_BLOCK = 'DISPLAY_BLOCK';
 const DISPLAY_LIST = 'DISPLAY_LIST';
 

@@ -10,7 +10,7 @@ import Sales from "./containers/Pages/Sales";
 import Catalogue from './containers/Pages/Catalogue';
 import Service from './containers/Pages/Service';
 
-const App = (props) => {
+const App = () => {
         return (
             <Layout>
                 <Switch>

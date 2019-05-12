@@ -4,13 +4,13 @@ import AllProducts from '../../../components/Catalogue/CatalogueProducts/AllProd
 import SearchBar from "../../../components/search-bar/SearchBar";
 import Breadcrumbs from './../../../components/Breadcrumbs/Breadcrumb';
 
-const CatalogueProducts = (props) => {
+const CatalogueProducts = () => {
     return (
       <>
           <Breadcrumbs/>
           <SearchBar/>
-          <CategoryList />
-          <AllProducts />
+          <CategoryList/>
+          <AllProducts/>
       </>
   )
 };
